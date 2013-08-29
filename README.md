@@ -16,12 +16,11 @@ USAGE:
     ).getLogger()
     logger.info('Logging INFO line')
     logger.warning('Warning Logger line')
-
     try:
         import NonFoudModule
     except ImportError:
         logger.error('Module not found')
-        
+
     try:
         len(9)
         logger.critical('This will fail len(9)')
@@ -31,11 +30,12 @@ USAGE:
 
 Log file Output:
 
-    2013-08-29 12:16:28,551 - INFO - Logging INFO line
-    2013-08-29 12:16:28,551 - WARNING - Warning Logger line
-    2013-08-29 12:16:28,551 - ERROR - Logging ERROR line None
+    2013-08-29 12:21:38,813 - INFO - Logging INFO line
+    2013-08-29 12:21:38,813 - WARNING - Warning Logger line
+    2013-08-29 12:21:38,813 - ERROR - Module not found
+    2013-08-29 12:21:38,813 - ERROR - Logging Exception line None
     Traceback (most recent call last):
-      File "example.py", line 17, in <module>
+      File "example.py", line 23, in <module>
         len(9)
     TypeError: object of type 'int' has no len()
 
