@@ -5,10 +5,10 @@ Python zipper-rotation Logger, it means it will automagically zip past logs and 
 
 USAGE:
 
-
+.. code-block:: python
     from logger.logger import Logger
     import traceback
-
+.. code-block:: python
     logger = Logger(
         log_filename='log.log',
         name='test_logger', # Name of the Logger instance, to avoid Singleton
@@ -16,7 +16,7 @@ USAGE:
     ).getLogger()
     logger.info('Logging INFO line')
     logger.warning('Warning Logger line')
-
+.. code-block:: python
     try:
         import NonFoudModule
     except ImportError:
@@ -31,11 +31,12 @@ USAGE:
 
 Log file Output:
 
-    2013-08-29 12:16:28,551 - INFO - Logging INFO line
-    2013-08-29 12:16:28,551 - WARNING - Warning Logger line
-    2013-08-29 12:16:28,551 - ERROR - Logging ERROR line None
+    2013-08-29 12:21:38,813 - INFO - Logging INFO line
+    2013-08-29 12:21:38,813 - WARNING - Warning Logger line
+    2013-08-29 12:21:38,813 - ERROR - Module not found
+    2013-08-29 12:21:38,813 - ERROR - Logging Exception line None
     Traceback (most recent call last):
-      File "example.py", line 17, in <module>
+      File "example.py", line 23, in <module>
         len(9)
     TypeError: object of type 'int' has no len()
 
