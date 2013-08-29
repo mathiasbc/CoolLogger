@@ -5,7 +5,6 @@ Python zipper-rotation Logger, it means it will automagically zip past logs and 
 
 USAGE:
 
-
     from logger.logger import Logger
     import traceback
 
@@ -16,6 +15,7 @@ USAGE:
     ).getLogger()
     logger.info('Logging INFO line')
     logger.warning('Warning Logger line')
+
     try:
         import NonFoudModule
     except ImportError:
