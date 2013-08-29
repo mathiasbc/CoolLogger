@@ -16,11 +16,17 @@ USAGE:
     ).getLogger()
     logger.info('Logging INFO line')
     logger.warning('Warning Logger line')
+
+    try:
+        import NonFoudModule
+    except ImportError:
+        logger.error('Module not found')
+        
     try:
         len(9)
         logger.critical('This will fail len(9)')
     except:
-        logger.exception('Logging ERROR line %s' % traceback.print_exc())
+        logger.exception('Logging Exception line %s' % traceback.print_exc())
         pass
 
 Log file Output:
