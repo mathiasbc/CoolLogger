@@ -34,3 +34,8 @@ class Logger(object):
     def getLogger(self):
         ''' return logger handle '''
         return self.logger
+
+    @staticmethod
+    def getByName(name):
+        '''returns the logger with name'''
+        return logging.getLogger(name)
