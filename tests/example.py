@@ -1,11 +1,11 @@
 #!/usr/bin/env python2.7
 # -*- coding: utf-8 -*-
 
-from logger.logger import Logger
+from coollogger import CoolLogger
 import traceback
 
 if __name__ == '__main__':
-    logger = Logger(
+    logger = CoolLogger(
         log_filename='log.log',
         name='test_logger', # Name of the Logger instance, to avoid Singleton
         keep_zipped = 20    # keep last 20 zipped log files

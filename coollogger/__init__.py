@@ -1,0 +1,1 @@
+from coollogger import CoolLogger

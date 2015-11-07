@@ -3,15 +3,27 @@ CoolLogger
 
 Python zipper-rotation Logger, it means it will automagically zip past logs and delete logs older than N days, worry no more about logs disk space.
 
+Installing:
+
+    $ git clone https://github.com/mathiasbc/CoolLogger.git
+    $ cd CoolLogger
+    $ pip install .
+
+    or
+
+    $ python setup.py install
+
+
 USAGE:
 
-    from logger.logger import Logger
+```python
+    from coollogger import CoolLogger
     import traceback
 
-    logger = Logger(
+    logger = CoolLogger(
         log_filename='log.log',
         name='test_logger', # Name of the Logger instance, to avoid Singleton
-        keep_zipped = 20    # keep last 20 zipped log files
+        keep_zipped = 20    # keep last 20 zipped log files, remove older
     ).getLogger()
     logger.info('Logging INFO line')
     logger.warning('Warning Logger line')
@@ -27,6 +39,7 @@ USAGE:
     except:
         logger.exception('Logging Exception line %s' % traceback.print_exc())
         pass
+```
 
 Log file Output:
 
