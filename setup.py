@@ -8,6 +8,7 @@ setup_params = dict(
     author="Mathias Bustamante",
     author_email="mathiasbc@gmail.com",
     url="https://github.com/mathiasbc/CoolLogger.git",
+    download_url="https://github.com/mathiasbc/coollogger/tarball/0.0.1",
     packages=['coollogger'],
 )
 
