@@ -5,14 +5,7 @@ Python zipper-rotation Logger, it means it will automagically zip past logs and 
 
 Installing:
 
-    $ git clone https://github.com/mathiasbc/CoolLogger.git
-    $ cd CoolLogger
-    $ pip install .
-
-    or
-
-    $ python setup.py install
-
+    $ pip install coollogger
 
 USAGE:
 
